@@ -10,7 +10,6 @@ import OutlinedButton from "../UI/OutlinedButton";
 
 function ImagePicker() {
   const [pickedImage, setPickedImage] = useState();
-  console.log(pickedImage);
   const [cameraPermissionInformation, requestPermission] =
     useCameraPermissions();
 
@@ -71,6 +70,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: Colors.primary100,
     borderRadius: 4,
+    overflow: "hidden",
   },
   image: {
     width: "100%",
